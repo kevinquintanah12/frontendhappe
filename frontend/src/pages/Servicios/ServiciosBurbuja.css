@@ -1,0 +1,68 @@
+.servicios-burbuja-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .servicio-burbuja {
+    background: #811818;
+    border-radius: 15px; /* Bordes redondeados */
+    border: 2px solid #ffffff; /* Borde blanco */
+    box-shadow: 0 4px 8px rgba(104, 58, 58, 0.801);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff; /* Color del texto blanco */
+    width: 300px; /* Ajustar el ancho del cuadro */
+    height: 150px; /* Ajustar la altura del cuadro */
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .servicio-burbuja:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .servicio-burbuja-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .servicio-burbuja-content h3, .servicio-burbuja-content p {
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    color: #ffffff; /* Color del texto blanco */
+  }
+  
+  .servicio-burbuja-content h3 {
+    font-size: 1em; /* Ajustar el tamaño de la fuente */
+    -webkit-line-clamp: 2; /* Número de líneas visibles */
+  }
+  
+  .servicio-burbuja-content p {
+    font-size: 0.8em; /* Ajustar el tamaño de la fuente */
+    -webkit-line-clamp: 3; /* Número de líneas visibles */
+  }
+  
+  .precio {
+    font-size: 8.2em; /* Tamaño del precio */
+    font-weight: bold;
+    color: #ffffff; /* Color del texto blanco */
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,64 @@
+.guardar-producto-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.guardar-producto-button:hover {
+  background-color: #e63946;
+}
+
+.guardar-producto-button .icon {
+  margin-right: 10px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.select-wrapper {
+  position: relative;
+  margin-top: 3px;
+  margin-bottom: 6px;
+}
+
+.select-wrapper .categoria-select {
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #333333;
+  appearance: none;
+  cursor: pointer;
+}
+
+.select-wrapper .categoria-select:hover {
+  border-color: #cccccc;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}

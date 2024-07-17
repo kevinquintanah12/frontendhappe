@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Margarine&display=swap');
+
+.menu-links {
+  padding: 3px;
+  background-color: rgb(255, 228, 228); /* Fondo blanco */
+  border-right: 1px solid #ffffff; /* Borde derecho */
+  box-shadow: 0 0 10px hsl(0, 78%, 61%); /* Sombra ligera para destacar el área de contenido */
+  font-family: 'Familjen Grotesk', sans-serif; /* Aplica la fuente Grotesk */
+}
+
+.menu-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #6d0303; /* Color del texto */
+  margin-bottom: 10px;
+  padding: 8px 12px; /* Aumentar el padding horizontal para hacer más largo */
+  border-radius: 5px;
+  font-size: 18px; /* Tamaño de letra ajustado */
+  font-family: 'Familjen Grotesk', sans-serif; /* Aplica la fuente Grotesk */
+  font-weight: bold; /* Letra en negrita */
+}
+
+.menu-links a:hover {
+  background-color: #dd473c; /* Color de fondo rojo al pasar el mouse */
+  color: #ffffff; /* Color del texto blanco al pasar el mouse */
+}
+
+.menu-icon {
+  width: 90px; /* Ancho del ícono ajustado */
+  height: 90px; /* Alto del ícono ajustado */
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+}

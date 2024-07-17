@@ -3,12 +3,12 @@
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-  border: 0;
+  color: hsl(0, 3%, 7%); /* Color de texto oscuro para mejor legibilidad */
 }
 
 :root {
   /* colors */
-  --bg-Color: rgb(234, 233, 233);
+  --bg-Color: rgb(243, 148, 148);
   /* Font Family */
   --font-family1: 'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif;
   --font-family2: 'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS', sans-serif;
@@ -25,7 +25,7 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background-color: var(--bg-Color);
+  background: #fff;
 }
 
 ol,
@@ -54,7 +54,7 @@ q:after {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(183, 181, 181);
+  background: rgb(255, 255, 255);
 }
 
 section {
@@ -132,7 +132,7 @@ section .texts h1 {
   top: 30%;
   left: 4%;
   font-size: 100px;
-  color: #6a6666;
+  color: #ffffff;
 }
 
 section .texts h1 span {
@@ -147,7 +147,7 @@ section .texts p {
   line-height: 30px;
   text-align: justify;
 
-  color: #6a6666;
+  color: #ffffff;
   font-size: 25px;
   font-family: var(--font-family2);
 }
@@ -197,7 +197,7 @@ h1 {
   padding: 15px;
   margin: 10px 0px;
   border-radius: 10px;
-  border: 1px solid gray;
+  border: 1px solid rgb(255, 255, 255);
   border: none;
   outline: none;
   background-color: rgb(246, 246, 246);
@@ -215,7 +215,7 @@ h1 {
 }
 
 .home a {
-  color: rgb(90, 124, 186);
+  color: rgb(255, 255, 255);
   display: inline-block;
 }
 
@@ -228,7 +228,7 @@ h1 {
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
-  box-shadow: 0 0 20px #eee;
+  box-shadow: 0 0 20px #ffffff;
   border-radius: 10px;
   display: block;
   width: 100%;
@@ -261,44 +261,39 @@ h1 {
 
 .icons {
   font-size: 30px;
-  color: rgb(80, 80, 80);
+  color: rgb(255, 250, 250);
 }
 
 /**********CONTAINER*************/
 .container {
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
-  width: 100%;
-  padding: 10px;
+  width: 190%;
+  color: rgb(255, 250, 250);
+
 }
 
-.sidebarLeft {
+.barralateral {
   flex-basis: 5%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
-  background-color: rgb(249, 247, 247);
-  padding: 15px 0 5px 0;
-  border: 1px solid rgb(201, 201, 201);
-  border-radius: 30px 0 0 30px;
+  background-color: rgb(255, 255, 255);
+  padding: 60px 0 5px 0;
 }
 
 .main-content {
   flex-basis: 75%;
-  background-color: rgb(237, 235, 235);
+  background-color: rgb(255, 255, 255);
   padding: 50px;
   height: 100%;
   overflow: auto;
-  border-top: 1px solid rgb(216, 216, 216);
-  border-bottom: 1px solid rgb(216, 216, 216);
-  border-right: 1px solid rgb(222, 219, 219);
+  border-right: 1px solid rgb(255, 255, 255);
 }
 
 .sidebarRight {
   flex-basis: 20%;
-  background-color: rgb(249, 247, 247);
+  background-color: rgba(255, 255, 255, 0.911);
   border-radius: 0 30px 30px 0;
   /*height: 100%;
   overflow: auto;*/
@@ -323,27 +318,21 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 80%;
-  padding: 20px;
-  color: rgb(167, 163, 163);
+  max-width: 140%;
+  padding: 25px;
+  color: rgb(12, 0, 0);
   text-decoration: none;
   font-family: var(--font-family2);
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .menu-links a:hover {
-  background-color: orange;
+  background-color: #e6314c;
   border-radius: 20px;
-  color: white;
+  color: rgb(14, 0, 0);
 }
 
-.user-info .user-detail{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
+
 
 .user-icon {
   color: rgb(51, 153, 51);
@@ -365,7 +354,7 @@ a {
 }
 
 .logout-icon {
-  color: rgb(167, 163, 163);
+  color: rgb(255, 255, 255);
   font-size: 28px;
   margin-bottom: 10px;
   color: rgb(179, 2, 2);
@@ -434,7 +423,7 @@ a {
   right: 30px;
   top: 30px;
 
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: rgb(218, 215, 215);
   border-radius: 50%;
   width: 30px;
@@ -462,7 +451,7 @@ a {
 
 .cart .cart-items .info h4 {
   font-family: var(--font-family2);
-  color: rgb(72, 71, 71);
+  color: rgb(255, 250, 250);
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -578,7 +567,7 @@ a {
   padding: 15px 0;
   margin-top: 20px;
   border-radius: 15px;
-  background-color: rgb(236, 156, 6);
+  background-color: rgb(95, 14, 14);
   color: white;
   font-size: 20px;
   font-weight: 500;
@@ -586,7 +575,7 @@ a {
 }
 
 .pay-btn:hover {
-  background-color: orange;
+  background-color: rgb(73, 13, 13);
 }
 
 /***************MAIN CONTENT******************/
@@ -660,7 +649,7 @@ a {
 }
 
 .category-menu ul li {
-  background-color: rgb(226, 225, 225);
+  background-color: rgb(255, 255, 255);
   margin-right: 10px;
   display: flex;
   justify-content: center;
@@ -703,9 +692,9 @@ a {
 .info-details .info {
   margin-top: 50px;
   padding: 25px 50px 25px 50px;
-  border: 1px solid rgb(214, 214, 214);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 15px;
-  background-color: rgb(242, 242, 242);
+  background-color: rgb(255, 255, 255);
   font-size: 28px;
   font-weight: 500;
   color: #df3c5b;
@@ -776,7 +765,7 @@ a {
   height: 120px;
   padding: 5px;
   position: absolute;
-  background-color: rgb(231, 191, 116);
+  background-color: rgb(110, 42, 21);
   top: 0px;
   object-fit: contain;
   border-radius: 30px 30px 0px 0px;   
@@ -800,8 +789,8 @@ a {
   padding: 10px;
   width: 100%;
   border-radius: 15px;
-  background-color: rgb(214, 95, 95);
-  color: rgb(236, 232, 232);
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 500;
   font-family: var(--font-family2);
@@ -814,11 +803,11 @@ a {
 
 .product-content .product-cart .add-product-cart .add-cart {
   cursor: pointer;
-  color: orange;
+  color: rgb(87, 24, 24);
   padding: 10px;
   width: 100%;
   border-radius: 15px;
-  background-color: rgb(236, 156, 6);
+  background-color: rgb(97, 29, 29);
   color: white;
   font-size: 18px;
   font-weight: 500;
@@ -871,7 +860,7 @@ a {
   background-color: white;
   padding: 50px;
   border-radius: 20px;
-  border:1px solid orange;
+  border:1px solid rgb(85, 17, 17);
 
   margin-left: 50px;
   margin-right: 50px;
@@ -1011,7 +1000,7 @@ a {
 }
 
 .form-container .form .form-input option {
-  color: gray;
+  color: rgb(255, 255, 255);
   font-size: 18px;
 }
 
@@ -1033,7 +1022,7 @@ a {
 }
 
 .modal-icon {
-  color: orange;
+  color: rgb(83, 19, 19);
   font-size: 40px;
 
 }

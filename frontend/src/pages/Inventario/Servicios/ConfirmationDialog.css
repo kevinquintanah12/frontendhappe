@@ -1,0 +1,56 @@
+/* ConfirmationDialog.css */
+
+.confirmation-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9; /* Color de fondo similar a macOS/iOS */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    z-index: 1000;
+    width: 300px; /* Ancho del diálogo */
+    max-width: 80%; /* Máximo ancho permitido */
+    font-family: Arial, sans-serif; /* Fuente adecuada */
+  }
+  
+  .confirmation-message {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .confirmation-buttons {
+    margin-top: 15px;
+    text-align: right;
+  }
+  
+  .confirmation-buttons button {
+    padding: 8px 16px; /* Ajusta el padding según sea necesario */
+    margin-left: 8px; /* Espacio entre botones */
+    border: none;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .confirmation-buttons button:first-child {
+    margin-left: 0; /* Elimina el margen izquierdo del primer botón */
+  }
+  
+  .confirmation-buttons button:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+  }
+  
+  .cancel-button {
+    background-color: #dc3545; /* Color de fondo del botón Cancelar */
+  }
+  
+  .cancel-button:hover {
+    background-color: #c82333; /* Cambio de color al pasar el mouse */
+  }
+  

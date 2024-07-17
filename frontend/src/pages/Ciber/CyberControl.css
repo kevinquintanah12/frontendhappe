@@ -1,0 +1,80 @@
+.cyber-control-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente para el efecto de glass morphism */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Bordes semitransparentes */
+  border-radius: 16px;
+  padding: 50px;
+  width: 90%; /* Ancho ajustado al 90% del contenedor padre */
+  max-width: 1200px; /* Ancho máximo para evitar que se expanda demasiado */
+  margin: 50px auto; /* Márgenes ajustados para centrar mejor */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Sombra aumentada */
+  backdrop-filter: blur(15px); /* Desenfoque para el efecto de glass morphism */
+  -webkit-backdrop-filter: blur(15px); /* Desenfoque para Safari */
+  animation: fadeIn 1s ease-in-out; /* Animación de entrada */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.computadoras-table {
+  width: 100%;
+  border-collapse: collapse;
+  animation: slideIn 1s ease-in-out; /* Animación de entrada para la tabla */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.computadoras-table th, .computadoras-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.computadoras-table th {
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente para los encabezados */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.iniciar-button, .stop-button {
+  background-color: #007aff;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transición en el color y la transformación */
+}
+
+.iniciar-button:hover, .stop-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Escala aumentada al hacer hover */
+}
+
+.stop-button {
+  background-color: #ff3b30;
+}
+
+.stop-button:hover {
+  background-color: #c1271c;
+}

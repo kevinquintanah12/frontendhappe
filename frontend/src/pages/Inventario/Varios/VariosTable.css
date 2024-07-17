@@ -1,0 +1,39 @@
+.varios-table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+  
+  .varios-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .varios-table th,
+  .varios-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .varios-table th {
+    background-color: #dd473c; /* Rojo macOS */
+    color: #fff;
+  }
+  
+  .varios-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .varios-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  .no-results {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+  }
+  

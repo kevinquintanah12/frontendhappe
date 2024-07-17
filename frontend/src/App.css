@@ -1,0 +1,53 @@
+/* Estilos generales para la aplicación */
+
+body {
+  margin: 0; /* Asegura que no haya margen alrededor del cuerpo */
+  font-family: Arial, sans-serif; /* Define la fuente principal */
+  background-color: #f0f0f0; /* Color de fondo para todo el cuerpo de la aplicación */
+}
+
+.App {
+  display: flex;
+  height: 100vh; /* Ajusta la altura de la aplicación al tamaño completo de la ventana */
+}
+
+.content {
+  flex: 1; /* El contenido principal ocupa todo el espacio disponible */
+  padding: 20px; /* Añade espacio alrededor del contenido */
+  background-color: #ffffff; /* Color de fondo del área de contenido */
+  border-radius: 8px; /* Añade bordes redondeados al área de contenido */
+  box-shadow: 0 0 10px rgba(255, 171, 171, 0.5); /* Sombra ligera para destacar el área de contenido */
+
+  overflow-y: auto; /* Añade scroll vertical si el contenido excede el tamaño */
+}
+
+/* Estilos específicos para la barra lateral */
+
+.BarraLateral {
+  width: 250px; /* Ancho fijo de la barra lateral */
+  background-color: #685757; /* Color de fondo de la barra lateral */
+  padding: 20px; /* Añade espacio interno */
+  border-right: 1px solid #e0e0e0; /* Borde derecho para separar la barra lateral del contenido */
+  box-shadow: 0 0 10px rgb(255, 255, 255); /* Sombra ligera para destacar el área de contenido */
+
+
+}
+
+/* Estilos para los iconos en la barra lateral */
+
+.BarraLateral .icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px; /* Espacio entre los iconos */
+}
+
+/* Estilos para el contenido del dashboard */
+
+.Dashboard {
+  background-color: #ffffff; /* Color de fondo del dashboard */
+  padding: 20px; /* Añade espacio interno */
+  flex: 1; /* El dashboard ocupa todo el espacio restante */
+  border-radius: 8px; /* Añade bordes redondeados al dashboard */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para destacar el dashboard */
+}

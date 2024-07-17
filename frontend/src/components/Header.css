@@ -1,0 +1,89 @@
+/* Estilos para el encabezado (header) y fuente Margarine */
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Margarine&display=swap');
+
+/* Estilos para el encabezado (header) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgb(255, 228, 228);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+  border-radius: 70px;
+
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.store-name {
+  font-size: 34px;
+  font-weight: bold;
+  color: #ff0000;
+  font-family: 'Margarine', sans-serif; /* Aplica la fuente Margarine */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.time-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos en el eje vertical */
+  text-align: center; /* Centra el texto horizontalmente */
+  font-family: 'Familjen Grotesk', sans-serif; /* Aplica la fuente Grotesk */
+}
+
+.date {
+  font-size: 28px;
+  color: #ff0000;
+  margin-bottom: 9px; /* Espacio entre fecha y hora */
+}
+
+.time {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff0000;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.close-box-btn {
+  padding: 10px 20px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.close-box-btn:hover {
+  background-color: rgba(255, 0, 0, 0.9);
+  transform: scale(1.05);
+  border: #ffffff;
+
+}

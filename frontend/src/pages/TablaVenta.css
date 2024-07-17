@@ -1,0 +1,146 @@
+.tabla-venta-container {
+  width: 85%;
+  margin: 0;
+  padding: 10px;
+  border: 6px solid rgb(240, 166, 166);
+  border-radius: 10px;
+  background: rgba(253, 253, 253, 0.8);
+  box-shadow: 0 0 30px rgba(170, 170, 170, 0.507);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 25%;
+  right: 3%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.search-container input {
+  padding: 10px;
+  border: 1px solid rgb(148, 148, 148);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.932);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  color: #333;
+}
+
+.search-container input:focus {
+  border-color: #577ac7;
+  box-shadow: 0 0 10px rgba(247, 247, 247, 0.5);
+}
+
+.search-results {
+  max-height: 200px; /* Ajusta la altura máxima según sea necesario */
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.search-result-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 0.9rem;
+}
+
+.search-result-item:hover,
+.search-result-item.highlighted {
+  background-color: #e0e0e0;
+}
+
+.tabla-venta {
+  width: 100%;
+  border-collapse: collapse;
+  align-self: flex-end;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.tabla-venta th,
+.tabla-venta td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 120px;
+}
+
+.tabla-venta th {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.tabla-venta td {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: red;
+  transition: transform 0.3s ease-in-out;
+}
+
+.delete-icon:hover {
+  transform: scale(1.2);
+}
+
+.total-container {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.total-container h2 {
+  font-size: 2.0rem;
+  color: #4caf50;
+}
+
+.total-container .total-amount {
+  font-weight: bold;
+  color: #4caf50;
+}
